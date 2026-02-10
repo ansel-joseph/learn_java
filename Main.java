@@ -1,17 +1,23 @@
-class vehicle{
-    void start(){
-        System.out.println("Vehicle is starting...");
+class ElectronicDevice{
+    void powerOn(){
+        System.out.println("Device is powering on");
     }
 }
-class car extends vehicle{
-    void drive(){
-        System.out.println("Car is driving...");
+class Computer extends ElectronicDevice{
+    void compute(){
+        System.out.println("Computer is proecessing data");
     }
 }
- public class Main{
-    public static void main(String[] args){
-        car c= new car();
-        c.start();
-        c.drive();
+class Laptop extends Computer{
+    void portable(){
+        System.out.println("Laptop is portable");
     }
- }
+}
+public class Main{
+    public static void main (String[] args){
+        Laptop l = new Laptop();
+        l.powerOn();
+        l.compute();
+        l.portable();
+    }
+}
