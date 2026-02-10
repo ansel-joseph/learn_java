@@ -1,21 +1,17 @@
-class Human {
-    void eat() {
-        System.out.println("Eating");
+class vehicle{
+    void start(){
+        System.out.println("Vehicle is starting...");
     }
 }
-
-class Student extends Human {
-    void study() {
-        System.out.println("Studying");
+class car extends vehicle{
+    void drive(){
+        System.out.println("Car is driving...");
     }
 }
-
-public class Main {
-    public static void main(String[] args) {
-        Human h = new Human();
-
-        Student s = new Student();
-        s.eat();     // ✅ Inherited
-        s.study();   // ✅ Own method
+ public class Main{
+    public static void main(String[] args){
+        car c= new car();
+        c.start();
+        c.drive();
     }
-}
+ }
